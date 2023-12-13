@@ -1,0 +1,19 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include<stdio.h>
+int main()
+{
+	//EOf 作为文件结束标志存在    
+	//输入缓冲区
+	int ch = 0;
+	while((ch=getchar())!= EOF)
+	{
+		//进行优化putchar(ch + 32);
+		printf("%c\n", ch + 32);
+		getchar();//清理\n
+	}
+	
+
+	
+	return 0;
+}
